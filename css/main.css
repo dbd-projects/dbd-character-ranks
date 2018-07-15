@@ -6,7 +6,11 @@ table, th, td {
     border: 2px solid darkgray;
     border-collapse: collapse;
     text-align: center;
-    color: dodgerblue;
+    color: deepskyblue;
+}
+a {
+    color: deepskyblue !important;
+    text-decoration: none;
 }
 .table-div {
     width: 60%;
