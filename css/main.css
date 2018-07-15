@@ -1,0 +1,10 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-div {
+    width: 60%;
+    min-width: 750px;
+    margin: auto;
+}
