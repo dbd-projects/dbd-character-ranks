@@ -8,9 +8,11 @@ table, th, td {
     text-align: center;
     color: deepskyblue;
 }
-a {
+td a {
     color: deepskyblue !important;
     text-decoration: none;
+    display: block;
+    width: 100%;
 }
 .table-div {
     width: 60%;

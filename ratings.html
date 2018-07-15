@@ -7,35 +7,14 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
-<body>
+<body onload="data(populateKillerTable)">
     <div id="body">
         <div class="table-div">
-            <table>
+            <table id="killerTable">
                 <tr>
                     <th>Killer</th>
                     <th>Rating</th>
                     <th>Reason</th>
-                </tr>
-                <tr>
-                    <td><img src="./images/nurse.png"><br><a href="https://deadbydaylight.gamepedia.com/Sally_Smithson" target="_blank">Nurse</a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#ratings-modal">S+</a></td>
-                    <td>
-                        Nurse is the absolute strongest killer in the game. Her blinks gives her high mobility around the
-                        map while also allowing her to ignore solid objects (which is useful during chases where the
-                        survivor's can only put solid objects between themselves and the killer to escape). Her mobility
-                        gives her the ability to hook a survivor, chase someone else, and then return to the hook as soon
-                        as the survivor is unhooked.
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="./images/billy.png"><br><a href="https://deadbydaylight.gamepedia.com/Max_Thompson_Jr." target="_blank">Hillbilly</a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#ratings-modal">S</a></td>
-                    <td>
-                        Billy's one-hit down is pretty strong because it makes chases go faster. He also has high mobility
-                        with his chainsaw, which eliminates the need to slow down the overall game. His ability to go from
-                        one side of the map to another in a few short seconds is the most powerful thing you can have in
-                        quick-paced games.
-                    </td>
                 </tr>
                 <tr>
                     <td><img src="./images/doc.png"><br>Doctor</td>
@@ -72,7 +51,7 @@
         </div>
     </div>
     <!-- Ratings Modal -->
-    <div id="ratings-modal" tabindex="-1" class="modal fade" role="dialog" aria-hidden="true">
+    <div id="ratingsModal" tabindex="-1" class="modal fade" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -97,7 +76,7 @@
         </div>
     </div>
     <!-- End Ratings Modal -->
-
+    <script src="scripts/ratingsData.js" type="text/javascript"></script>
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
