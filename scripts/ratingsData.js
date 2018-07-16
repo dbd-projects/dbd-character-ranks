@@ -23,6 +23,7 @@ async function populateKillerTable(json){
         let nameText = document.createTextNode(obj.name);
         img.src = obj.img;
         a.href = obj.link;
+        a.target = "_blank";
         a.appendChild(img);
         a.appendChild(nameText);
         name.appendChild(a);
