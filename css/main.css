@@ -1,15 +1,15 @@
 body{
-    background-color: #494949 !important;
+    background-color: #fefefa !important;
     font-family: Verdana, Geneva, sans-serif;
 }
 table, th, td {
     border: 2px solid darkgray;
     border-collapse: collapse;
     text-align: center;
-    color: deepskyblue;
+    color: #494949;
 }
 td a {
-    color: deepskyblue !important;
+    color: #494949 !important;
     text-decoration: none;
     display: block;
     width: 100%;
