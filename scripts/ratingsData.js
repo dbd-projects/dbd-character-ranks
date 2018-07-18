@@ -4,7 +4,6 @@ const data = function(callback){
     xhttp.open("GET","temp/data.json", true);
     xhttp.onreadystatechange = function() {
         if(xhttp.status == "200" && xhttp.readyState === 4){
-            console.log(JSON.parse(xhttp.responseText));
             callback(JSON.parse(xhttp.responseText));
         }
     };
