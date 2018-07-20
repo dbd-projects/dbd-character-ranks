@@ -1,15 +1,14 @@
 body{
-    background-color: #fefefa !important;
     font-family: Verdana, Geneva, sans-serif;
 }
 table, th, td {
     border: 2px solid darkgray;
     border-collapse: collapse;
     text-align: center;
-    color: #494949;
+    padding: 5px !important;
 }
 td a {
-    color: #494949 !important;
+    color: inherit;
     text-decoration: none;
     display: block;
     width: 100%;

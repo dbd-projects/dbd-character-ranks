@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <title>Dead by Daylight Character Ratings</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/ratings.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/dbd-projects/dbd-navbar/master/navbar.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
-<body onload="getData(populateKillerTable)">
+<body id="theBody" class="dark" onload="pageLoad()">
+
+    <div data-html="https://raw.githubusercontent.com/dbd-projects/dbd-navbar/master/navbar.html"></div>
+
     <div id="body">
         <div class="table-div">
-            <table id="killerTable">
-                <tr>
-                    <th>Killer</th>
-                    <th>Rating</th>
-                    <th>Reason</th>
-                </tr>
-            </table>
+            <table id="killerTable"></table>
         </div>
     </div>
     <!-- Ratings Modal -->
@@ -45,7 +43,9 @@
         </div>
     </div>
     <!-- End Ratings Modal -->
-    <script src="scripts/RatingsController.js" type="text/javascript"></script>
+    <script src="https://rawgithub.com/dbd-projects/dbd-navbar/master/navbar.js" type="text/javascript"></script>
+    <script src="scripts/include_html.js" type="text/javascript"></script>
+    <script src="scripts/ratings.js" type="text/javascript"></script>
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
