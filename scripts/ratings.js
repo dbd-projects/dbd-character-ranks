@@ -5,7 +5,7 @@
 function getData(callback) {
     let xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
-    xhttp.open("GET","temp/data.json", true);
+    xhttp.open("GET","https://raw.githubusercontent.com/dbd-projects/dbd-data/master/killer_ranks.json", true);
     xhttp.onreadystatechange = function() {
         if(xhttp.status == "200" && xhttp.readyState === 4){
             callback(JSON.parse(xhttp.responseText));
